@@ -79,3 +79,4 @@ Formulário de Cadastro:
 O formulário de adição de produtos com o campo de upload de imagem e preview.
 
 📄 LicençaEste projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.🧑‍💻 AutorFabris
+# ReactMercado
