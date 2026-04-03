@@ -17,10 +17,9 @@ const ListaProdutos = ({ produtos }) => {
 
       <div className="produtos-grid">
         {produtos.map(produto => (
-          <ProdutoCard
-            key={produto.id}
-            {...produto}
-          />
+          <ProdutoCard key={produto.id} {...produto}>
+            <button className="btn-comprar">Adicionar ao carrinho</button>
+          </ProdutoCard>
         ))}
       </div>
     </div>

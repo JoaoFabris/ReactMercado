@@ -7,6 +7,8 @@ import './App.css';
 function App() {
   const [produtos, setProdutos] = useState(produtosIniciais);
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
+  const [filtro, setFiltro] = useState(false)
+  const [buscar, setBusca] = useState('')
 
   const adicionarProduto = (novoProduto) => {
     const produtoComId = {
@@ -17,9 +19,14 @@ function App() {
     setMostrarFormulario(false);
   };
 
+  const categorias = produtos.map(e => e.categoria)
+  console.log(categorias);
+
+  const produtosFiltrados = produtos.filter(p => p.nome.toLowerCase().includes(buscar.toLowerCase()))
+
   return (
     <div className="app">
-      <button 
+      <button
         className="btn-novo-produto"
         onClick={() => setMostrarFormulario(!mostrarFormulario)}
       >
@@ -29,8 +36,11 @@ function App() {
       {mostrarFormulario && (
         <FormularioProduto onAdicionar={adicionarProduto} />
       )}
-
-      <ListaProdutos produtos={produtos} />
+      <input className='input-search' type="search" placeholder='Buscar por nome' value={buscar} onChange={(e) => setBusca(e.target.value)} />
+      <select value={filtro} onChange={(e) => setFiltro(e.target.value)}>
+        {categorias.map(c => <option key={c} value={c}>{c}</option>)}
+      </select>
+      <ListaProdutos produtos={produtosFiltrados} />
     </div>
   );
 }
