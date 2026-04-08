@@ -1,0 +1,94 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Notebook Gamer",
+      "preco": 4500,
+      "categoria": "Eletrônicos",
+      "emPromocao": true,
+      "desconto": 10,
+      "imagem": "/assets/notebook.png"
+    },
+    {
+      "id": "2",
+      "nome": "Mouse Wireless",
+      "preco": 150,
+      "categoria": "Periféricos",
+      "emPromocao": false,
+      "desconto": 0,
+      "imagem": "/assets/mouse.png"
+    },
+    {
+      "id": "3",
+      "nome": "Teclado Mecânico",
+      "preco": 320,
+      "categoria": "Periféricos",
+      "emPromocao": true,
+      "desconto": 15,
+      "imagem": "/assets/teclado.png"
+    },
+    {
+      "id": "4",
+      "nome": "Monitor 27\"",
+      "preco": 1800,
+      "categoria": "Eletrônicos",
+      "emPromocao": false,
+      "desconto": 0,
+      "imagem": "/assets/monitor.png"
+    },
+    {
+      "id": "5",
+      "nome": "Headset RGB",
+      "preco": 280,
+      "categoria": "Áudio",
+      "emPromocao": true,
+      "desconto": 20,
+      "imagem": "/assets/headset.png"
+    },
+    {
+      "id": "6",
+      "nome": "Webcam Full HD",
+      "preco": 210,
+      "categoria": "Periféricos",
+      "emPromocao": false,
+      "desconto": 0,
+      "imagem": "/assets/webcam.png"
+    },
+    {
+      "id": "7",
+      "nome": "Cadeira Gamer",
+      "preco": 1200,
+      "categoria": "Acessórios",
+      "emPromocao": false,
+      "desconto": 0,
+      "imagem": "/assets/cadeira.png"
+    },
+    {
+      "id": "8",
+      "nome": "Placa de Vídeo RTX",
+      "preco": 3800,
+      "categoria": "Eletrônicos",
+      "emPromocao": true,
+      "desconto": 5,
+      "imagem": "/assets/gpu.png"
+    },
+    {
+      "id": "9",
+      "nome": "Smartphone Pro",
+      "preco": 2900,
+      "categoria": "Eletrônicos",
+      "emPromocao": false,
+      "desconto": 0,
+      "imagem": "/assets/smartphone.png"
+    },
+    {
+      "nome": "teste",
+      "preco": 1212,
+      "categoria": "Eletrônicos",
+      "emPromocao": false,
+      "desconto": 0,
+      "id": "B0hUl_qDCgY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
